@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+      font-family: 'Arial';
+    }
+
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: url(./flexbox/bg-full.jpg) no-repeat center/cover;
+      backdrop-filter: blur(1px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      width: 80%;
+      height: 75%;
+      border: 1px solid lightgray;
+      display: flex;
+      box-shadow: 1px 1px 5px #000;
+      /* filter: drop-shadow(0 0 10px #000); */
+    }
+
+    .left {
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("./flexbox/main.jpg") no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .col1 {
+      text-align: center;
+    }
+
+    .col1 img {
+      margin: 10px 20px;
+      width: 30%;
+      height: 40%;
+    }
+
+    .col1 h1 {
+      margin: 5px;
+      color: white;
+    }
+
+    .col1 p {
+      padding: 0 40px;
+      color: white;
+    }
+
+    .right {
+      width: 50%;
+      height: 100%;
+    }
+
+    .up {
+      background: silver;
+      width: 100%;
+      height: 50%;
+      padding-top: 10%;
+      padding-left: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .up p {
+      float: left;
+    }
+
+    .up img {
+      width: 35%;
+      height: 100%;
+    }
+
+    .down {
+      width: 100%;
+      height: 50%;
+      background-color: #000;
+      background-image: url(./flexbox/tifa.png);
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-size: 35% 90%;
+      padding-top: 5%;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .down>div {
+      padding-left: 30%;
+      padding-right: 10%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="left">
+      <div class="col1">
+        <img src="./flexbox/ps4-ff7.png">
+        <h1>AVAILABLE NOW</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Asperiores dolor dolores nesciunt temporibus. Placeat tenetur temporibus doloribus, repudiandae neque
+          corporis odit porro illum amet.</p>p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="up">
+        <div>
+          <h1>Cloud</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit reiciendismolestiae animi dolorem. Atque at
+            repudiandae tempore explicabo molestias eaque?Eaque modi ullam accusamus saepe delectus perferendis ipsum
+            ratione quo?</p>
+        </div>
+        <img src="./flexbox/cloud.png">
+      </div>
+      <div class="down">
+        <div>
+          <h1>Tifa</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis saepe dolore omnis hic quo fugiat.
+            Iste quidem asperiores, quas cupiditate laudantium perferendis commodi voluptatum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
